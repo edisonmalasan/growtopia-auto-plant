@@ -11,26 +11,26 @@ This repository contains a Lua script designed to automate the process of planti
 
 ## Configuration Setup
 
-Before running the script, you must configure the variables at the top of the file to match your account and world setup. Open the script and modify these values:
+Before running the script, you must configure the variables at the top of the file to match setup. Open the script and modify these values:
 
 ### World & Save Info
 
 ```lua
-World_Name = "Contoh" -- The name of the world where you want to plant the seeds.
-World_Save = "Contoh" -- The name of the world where your seeds are stored on the ground.
-Door_ID = "Contoh"    -- The required Door ID to warp into your worlds.
+World_Name = "World" -- The name of the world where you want to plant the seeds.
+World_Save = "Save" -- The name of the world where your seeds are stored and dropped in a world.
+Door_ID = "id"    -- The required Door ID to warp into your worlds.
 ```
 
 ### Seed Info
 
 ```lua
-Seed_ID = 4585 -- The Item ID of the seed you want to plant. 
+Seed_ID = 4585 -- The Item ID of the seed you want to plant. You can check the plants id via pandora items list
 ```
 
 ### Delay Settings
 
 ```lua
-Delay_Plant = 400      -- Delay for planting actions. Preferred range: 200-400 ms.
+Delay_Plant = 400      -- Delay for planting actions. Preferred range: 300-400 ms.
 Delay_Warp = 5000      -- Delay when warping. Maximum of 7000 ms to avoid getting banned.
 Delay_Find_Path = 1000 -- Delay for finding paths. Preferred value: 1000 ms.
 ```
